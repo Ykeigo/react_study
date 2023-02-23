@@ -20,5 +20,11 @@ function getJs(req, res) {
       res.write(data); 
       res.end();
     });
+  }  else if ("/js/recipes.js" == url) {
+    fs.readFile("./js/recipes.js", "UTF-8", function (err, data) {
+      res.writeHead(200, {"Content-Type": "text/plain"});
+      res.write(data); 
+      res.end();
+    });
   } 
 }

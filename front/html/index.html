@@ -1,15 +1,27 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
   <head>
+    <meta
+      name="viewport"
+      content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no"
+    />
     <meta charset="utf-8" />
-    <title>HTML入門-JavaScriptの基本</title>
-    <script src="./js/sample.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/@babel/standalone/babel.min.js"
+    ></script>
+    <title>React Recipes</title>
   </head>
   <body>
-    <h1>外部ファイル(JavaScript)の読み込み</h1>
-    <button type="button" onclick="ChangeParaToDate()">
-      クリックして下さい
-    </button>
-    <p id="eid_date">外部ファイルでコンテンツの内容を変更します。</p>
+    <div id="react-container"></div>
+    <script src="/js/recipes.js" type="text/babel"></script>
   </body>
 </html>

@@ -5,7 +5,15 @@
 	"build": {
 		"dockerfile": "Dockerfile",
 	},
-	"workspaceFolder": "/workspace", // Workspaceのフォルダを指定
+	"workspaceFolder": "/workspace",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"xabikos.JavaScriptSnippets",
+				"esbenp.prettier-vscode"
+			]
+		}
+	}, // Workspaceのフォルダを指定
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
